@@ -96,4 +96,7 @@
         <item>restart_bootloader</item>
         <item>restart_download</item>
      </string-array>
+
+    <!-- Button backlight -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 </resources>
