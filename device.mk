@@ -543,6 +543,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 PRODUCT_PACKAGES += \
+    com.android.vndk.current \
     vndk_package
 
 # VNDK-SP:
