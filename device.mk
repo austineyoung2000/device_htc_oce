@@ -470,7 +470,8 @@ PRODUCT_BOOT_JARS += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    $(LOCAL_PATH)/libhtcril_db
 
 # Tethering
 PRODUCT_PACKAGES += \
