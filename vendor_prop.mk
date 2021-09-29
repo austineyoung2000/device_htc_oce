@@ -73,6 +73,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ts.rtmakeup=false \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
+# Chipset
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8996
+
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1
