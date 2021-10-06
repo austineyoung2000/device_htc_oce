@@ -19,16 +19,17 @@ package org.lineageos.settings.doze;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import android.preference.PreferenceActivity;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class DozeSettings extends PreferenceActivity  {
+public class DozeSettings extends CollapsingToolbarBaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.doze);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new DozeSettingsFragment()).commit();
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
