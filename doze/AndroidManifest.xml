@@ -14,13 +14,14 @@
 
     <uses-sdk
         android:minSdkVersion="23"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="31" />
 
     <application
         android:allowBackup="true"
         android:persistent="true" >
 
-        <receiver android:name="org.lineageos.settings.doze.BootCompletedReceiver">
+        <receiver android:name="org.lineageos.settings.doze.BootCompletedReceiver"
+                  android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -28,7 +29,8 @@
         </receiver>
 
         <service android:name="org.lineageos.settings.doze.SensorsDozeService"
-                 android:permission="SensorsDozeService">
+                 android:permission="SensorsDozeService"
+                 android:exported="true">
         </service>
 
         <activity
