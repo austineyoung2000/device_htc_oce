@@ -213,6 +213,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
