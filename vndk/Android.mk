@@ -4,9 +4,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifndef BOARD_VNDK_VERSION
 
-VNDK_SP_LIBRARIES := \
-    libdexfile_support
-
 install_in_hw_dir := \
    android.hidl.memory@1.0-impl
 
