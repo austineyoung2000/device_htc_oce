@@ -43,6 +43,8 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := kryo
 TARGET_USES_64_BIT_BINDER := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+RELAX_USES_LIBRARY_CHECK := true
 
 # Bootanimation
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -227,8 +229,9 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_USES_OLD_MNC_FORMAT := true
 
 # SELinux
--include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal/vendor
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
