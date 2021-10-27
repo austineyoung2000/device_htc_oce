@@ -173,3 +173,15 @@ extern "C" status_t _ZN7android13GraphicBuffer4lockEjPPv(uint32_t inUsage, void*
 extern "C" void _ZN7android10frameworks13sensorservice4V1_08toStringENS2_6ResultE() { }
 extern "C" void _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjijPNS_14SurfaceControlEjj() { }
 extern "C" void _ZN7android14SurfaceControl8setLayerEi() { }
+
+extern "C" void _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE(void);
+
+extern "C" void _ZN7android21SurfaceComposerClient14getDisplayInfoERKNS_2spINS_7IBinderEEEPNS_11DisplayInfoE(void) {
+  _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE();
+ }
+
+extern "C" void _ZN7android14SurfaceControl10getSurfaceEv(void);
+
+extern "C" void _ZNK7android14SurfaceControl10getSurfaceEv(void) {
+  _ZN7android14SurfaceControl10getSurfaceEv();
+ }
