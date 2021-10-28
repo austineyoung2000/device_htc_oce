@@ -505,8 +505,7 @@ PRODUCT_PACKAGES += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/pixel
+    $(LOCAL_PATH)
 
 # Tethering
 PRODUCT_PACKAGES += \
