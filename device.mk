@@ -183,7 +183,7 @@ PRODUCT_PACKAGES += \
 
 # Cutout
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    DeviceNoCutoutOverlay
 
 # Device Settings
 #PRODUCT_PACKAGES += \
