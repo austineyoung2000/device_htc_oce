@@ -256,3 +256,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.min.fling_velocity=160 \
     ro.max.fling_velocity=20000 \
     persist.fuse_sdcard=true
+
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.usb.config.extra=none \
+    vendor.usb.dpl.inst.name=dpl \
+    vendor.usb.rmnet.func.name=rmnet_bam \
+    vendor.usb.rmnet.inst.name=rmnet \
+    vendor.usb.rndis.func.name=rndis_bam
