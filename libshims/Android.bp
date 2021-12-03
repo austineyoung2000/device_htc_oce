@@ -48,3 +48,9 @@ cc_library_shared {
     proprietary: true,
 
 }
+
+cc_library_shared {
+    name: "libshim_libimsmedia",
+    srcs: ["libshim_libimsmedia.cpp"],
+    compile_multilib: "64",
+}

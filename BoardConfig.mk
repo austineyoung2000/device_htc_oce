@@ -238,7 +238,8 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/hw/camera.msm8996.so|/system/vendor/lib/libshim_camera.so \
     /system/vendor/lib/libmmcamera_stillmore_lib.so|/system/vendor/lib/libshim_stillmore.so \
     /system/product/lib64/libdpmframework.so|libcutils_shim.so \
-    /system/vendor/lib/libcameraface.so|libshim_sensor.so
+    /system/vendor/lib/libcameraface.so|libshim_sensor.so \
+    /system/product/lib64/libimsmedia_jni.so|libshim_libimsmedia.so
 
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true    
