@@ -214,8 +214,8 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # Doze
-PRODUCT_PACKAGES += \
-    HTCDoze
+#PRODUCT_PACKAGES += \
+#    HTCDoze
 
 # DRM
 PRODUCT_PACKAGES += \
