@@ -287,8 +287,8 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-#PRODUCT_BOOT_JARS := \
-#    android.hidl.manager-V1.0-java
+PRODUCT_BOOT_JARS := \
+    android.hidl.manager-V1.0-java
 
 #IMS Shim
 PRODUCT_PACKAGES += \
@@ -510,8 +510,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
-#PRODUCT_BOOT_JARS += \
-#    telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
@@ -578,8 +578,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Wifi tether
 PRODUCT_PROPERTY_OVERRIDES += \
