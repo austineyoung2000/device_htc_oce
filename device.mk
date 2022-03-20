@@ -287,9 +287,6 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-PRODUCT_BOOT_JARS := \
-    android.hidl.manager-V1.0-java
-
 #IMS Shim
 PRODUCT_PACKAGES += \
     libbase_shim \
