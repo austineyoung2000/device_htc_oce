@@ -164,7 +164,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     com.qualcomm.qti.camera \
     libmm-qcamera \
-    Snap \
+    Aperture \
     libshim_camera \
     libshim_sensor \
     libshim_stillmore \
