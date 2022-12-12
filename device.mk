@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libaudiopolicymanager \
     libqcompostprocbundle \
     libqcomvisualizer \
     libaudioroute \
@@ -151,9 +150,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
-    libbt-vendor \
-    libbthost_if \
-    libldacBT_dec
+    libbt-vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
@@ -162,8 +159,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    com.qualcomm.qti.camera \
-    libmm-qcamera \
     Aperture \
     libshim_camera \
     libshim_sensor \
@@ -176,10 +171,7 @@ PRODUCT_PACKAGES += \
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    libcnefeatureconfig \
-    services-ext
+    libcnefeatureconfig
 
 # Cutout
 PRODUCT_PACKAGES += \
@@ -193,23 +185,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl \
     vendor.display.config@1.1 \
-    vendor.display.config@1.1_vendor \
-    copybit.msm8996 \
     gralloc.msm8996 \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
     libdisplayconfig \
     libhwc2on1adapter \
-    libgenlock \
-    liboverlay \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml
@@ -228,10 +213,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service-oce
 
-# Enable Codec 2.0
-PRODUCT_PACKAGES += \
-    libstagefright_ccodec
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
@@ -242,8 +223,7 @@ PRODUCT_PACKAGES += \
 
 # fwk-detect
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -270,19 +250,14 @@ PRODUCT_COPY_FILES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service \
-    chargeonlymode
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system \
     libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 #IMS Shim
 PRODUCT_PACKAGES += \
@@ -301,7 +276,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.htc.fp.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     init.oce.rc \
@@ -319,12 +293,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/siw_touch_input.kl:system/usr/keylayout/siw_touch_input.kl \
     $(LOCAL_PATH)/keylayout/himax-touchscreen-cap.kl:system/usr/keylayout/himax-touchscreen-cap.kl
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -365,7 +333,6 @@ PRODUCT_COPY_FILES += \
 
 # Media Extensions
 PRODUCT_PACKAGES += \
-    libavmediaserviceextensions \
     libmediametrics \
     libregistermsext \
     mediametrics
@@ -393,7 +360,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libhypv_intercept \
-    libextmedia_jni \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -401,7 +367,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -449,13 +414,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
 
-# RCS
-PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -463,7 +421,6 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl \
-    android.hardware.radio.config@1.0 \
     android.hardware.radio@1.2-radio-service \
     android.hardware.radio@1.5 \
     QtiTelephonyService \
@@ -493,7 +450,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager.xml \
     com.android.ims.rcsmanager \
     ims-ext-common \
     ims_ext_common.xml \
@@ -513,10 +469,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
-
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
@@ -541,9 +493,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
-PRODUCT_PACKAGES += \
-    vndk_package
-
 # VNDK-SP:
 PRODUCT_PACKAGES += \
     vndk-sp
@@ -561,8 +510,6 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     wificond \
-    wifilogd \
-    wlutil \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
