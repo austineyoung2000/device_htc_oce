@@ -493,10 +493,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 29 30
 
-# VNDK-SP:
-PRODUCT_PACKAGES += \
-    vndk-sp
-
 # Prebuilt VNDK libs
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui-v28.so \
