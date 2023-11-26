@@ -383,13 +383,6 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
-# Protobuf
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v28.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-v28.so \
-    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-v28.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-v28.so
-
 # QC framework    
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
@@ -489,14 +482,6 @@ PRODUCT_PACKAGES += \
 # Voice assistant
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.opa.eligible_device=true
-
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 29 30
-
-# Prebuilt VNDK libs
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui-v28.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libgui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgui-v28.so
 
 # Wifi
 PRODUCT_PACKAGES += \
