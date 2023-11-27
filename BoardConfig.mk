@@ -231,6 +231,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libril.so|/system/vendor/lib64/libshim_ril.so \
     /system/vendor/lib/hw/camera.msm8996.so|/system/vendor/lib/libshim_camera.so \
+    /system/vendor/lib/hw/camera.msm8996.so|/system/vendor/lib/libmemset_shim.so \
     /system/vendor/lib/libmmcamera_stillmore_lib.so|/system/vendor/lib/libshim_stillmore.so \
     /system/product/lib64/libdpmframework.so|libcutils_shim.so \
     /system/vendor/lib/libcameraface.so|libshim_sensor.so \

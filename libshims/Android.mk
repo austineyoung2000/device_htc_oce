@@ -36,3 +36,24 @@ LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+    camera_shim.cpp
+
+LOCAL_SHARED_LIBRARIES := \
+    libbinder \
+    libutils \
+    libgui_vendor \
+    libui
+
+LOCAL_C_INCLUDES := \
+    frameworks/native/include
+
+LOCAL_MODULE := libshim_camera
+LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := 32
+LOCAL_VENDOR_MODULE := true
+
+include $(BUILD_SHARED_LIBRARY)

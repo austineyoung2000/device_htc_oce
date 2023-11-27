@@ -76,12 +76,12 @@ extern "C" void _ZN7android13GraphicBufferC1Ejjij(
 }
 
 //sp<SurfaceControl> SurfaceComposerClient::createSurface(const String8& name, uint32_t w, uint32_t h,
-//                                                        PixelFormat format, uint32_t flags,
+//                                                        PixelFormat format, int32_t flags,
 //                                                        const sp<IBinder>& parentHandle,
 //                                                        LayerMetadata metadata,
 //                                                        uint32_t* outTransformHint)
-extern "C" void* _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjijRKNS_2spINS_7IBinderEEENS_13LayerMetadataEPj(const android::String8& name, uint32_t w, uint32_t h,
-                                                        PixelFormat format, uint32_t flags,
+extern "C" void* _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjiiRKNS_2spINS_7IBinderEEENS_3gui13LayerMetadataEPj(const android::String8& name, uint32_t w, uint32_t h,
+                                                        PixelFormat format, int32_t flags,
                                                         const sp<IBinder>& parentHandle,
                                                         android::LayerMetadata metadata,
                                                         uint32_t* outTransformHint);
@@ -92,7 +92,7 @@ extern "C" void* _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8
     const android::String8& name, uint32_t w, uint32_t h, PixelFormat format,
     uint32_t flags) {
   android::LayerMetadata metadata;
-  sc = _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjijRKNS_2spINS_7IBinderEEENS_13LayerMetadataEPj(name, w, h, format, flags, nullptr, metadata, nullptr);
+  sc = _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjiiRKNS_2spINS_7IBinderEEENS_3gui13LayerMetadataEPj(name, w, h, format, (int32_t)flags, nullptr, metadata, nullptr);
   return sc;
 }
 
@@ -148,11 +148,11 @@ extern "C" void _ZN7android21SurfaceComposerClient22closeGlobalTransactionEb(){
 }
 
 //sp<IBinder> SurfaceComposerClient::getInternalDisplayToken();
-extern "C" void _ZN7android21SurfaceComposerClient23getInternalDisplayTokenEv(void);
+//extern "C" void _ZN7android21SurfaceComposerClient23getInternalDisplayTokenEv(void);
 
 //sp<IBinder> SurfaceComposerClient::getBuiltInDisplay(int32_t id);
 extern "C" void _ZN7android21SurfaceComposerClient17getBuiltInDisplayEi(int32_t id){
-    _ZN7android21SurfaceComposerClient23getInternalDisplayTokenEv();
+//    _ZN7android21SurfaceComposerClient23getInternalDisplayTokenEv();
 }
 
 extern "C" void _ZN7android14SurfaceControlD0Ev(void);
@@ -177,10 +177,10 @@ extern "C" void _ZN7android10frameworks13sensorservice4V1_08toStringENS2_6Result
 extern "C" void _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjijPNS_14SurfaceControlEjj() { }
 extern "C" void _ZN7android14SurfaceControl8setLayerEi() { }
 
-extern "C" void _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE(void);
+//extern "C" void _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE(void);
 
 extern "C" void _ZN7android21SurfaceComposerClient14getDisplayInfoERKNS_2spINS_7IBinderEEEPNS_11DisplayInfoE(void) {
-  _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE();
+//  _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE();
  }
 
 extern "C" void _ZN7android14SurfaceControl10getSurfaceEv(void);
