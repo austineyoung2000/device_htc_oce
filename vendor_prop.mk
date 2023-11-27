@@ -230,8 +230,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.binary_xml=false \
-    ro.vndk.version=current
+    persist.sys.binary_xml=false
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
