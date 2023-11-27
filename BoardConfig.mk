@@ -75,7 +75,8 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     firmware/adsp \
     firmware/radio \
     firmware/venus \
-    firmware/wsd
+    firmware/wsd \
+    misc \
 
 # Audio
 #AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
