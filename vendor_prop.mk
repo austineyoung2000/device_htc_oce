@@ -109,6 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
     debug.sf.disable_backpressure=1 \
