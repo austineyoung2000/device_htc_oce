@@ -75,8 +75,7 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     firmware/adsp \
     firmware/radio \
     firmware/venus \
-    firmware/wsd \
-    misc \
+    firmware/wsd
 
 # APEX
 TARGET_FLATTEN_APEX := true
