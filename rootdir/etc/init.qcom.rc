@@ -69,9 +69,14 @@ on init
     chown root system /sys/fs/cgroup/memory/sw/tasks
     chmod 0660 /sys/fs/cgroup/memory/sw/tasks
 
-on post-fs
-    chmod 0755 /sys/kernel/debug/tracing
+    # Mount and use blkio cgroup
+    mount tmpfs cgroup_root /sys/fs/cgroup mode=0750,uid=0,gid=1000
+    mkdir /sys/fs/cgroup/blkio root system
+    mount cgroup none /sys/fs/cgroup/blkio blkio
+    chown root system /sys/fs/cgroup/blkio
+    chmod 0660 /sys/fs/cgroup/blkio
 
+on post-fs
     chmod 0664 /sys/devices/virtual/graphics/fb0/idle_time
     chown system graphics /sys/devices/virtual/graphics/fb0/idle_time
     write /sys/devices/virtual/graphics/fb0/idle_time 100
