@@ -116,6 +116,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
+    debug.hwui.renderer=skiagl \
+    debug.hwui.skia_atrace_enabled=false \
+    debug.renderengine.backend=skiaglthreaded \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
     dev.pm.dyn_samplingrate=1 \
@@ -128,9 +131,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=640 \
     vendor.display.disable_scaler=1 \
     vendor.display.disable_skip_validate=1 \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
-    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+    debug.sf.early_app_phase_offset_ns=1500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
