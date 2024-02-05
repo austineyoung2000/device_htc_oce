@@ -107,7 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
-    persist.vendor.data.iwlan.enable=true \
+    persist.vendor.data.iwlan.enable=false \
     persist.vendor.data.mode=concurrent
 
 # Default pd_enable value
@@ -154,7 +154,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
-    persist.data.iwlan.enable=true \
+    persist.data.iwlan.enable=false \
     persist.dbg.ims_volte_enable=1 \
     persist.dbg.wfc_avail_ovr=1 \
     service.qti.ims.enabled=1 \
